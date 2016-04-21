@@ -1,0 +1,9 @@
+{
+  "name" : "staging",
+  "description" : "The environment where code gets to mingle",
+  "default_attributes" : {
+    "users" : {
+      "uid" : 3000
+    }
+  }
+}
