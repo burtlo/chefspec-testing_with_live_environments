@@ -34,7 +34,11 @@ describe 'users::default' do
       end
 
       let(:environment) do
-        JSON.parse(File.read('../environments/staging.json'))
+        Chef::Environment.load_from_file(environment_name)
+      end
+
+      let(:environment_name) do
+        'staging'
       end
 
       it 'converges successfully' do
